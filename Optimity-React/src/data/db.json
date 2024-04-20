@@ -1,0 +1,36 @@
+{
+  
+"welcome": [
+  {
+    "id": 1,
+    "title": "Optimity",
+    "description": "We are passionate about maximizing the potential of our customers' IT systems and ensuring that every single cent invested delivers its full worth. We provide comprehensive vendor-neutral solutions, always prioritizing our customers’ best interests. Our dedicated team of experienced professionals strives to deliver innovative and cutting-edge ICT solutions that precisely match each customer's unique needs.",
+    "imgUrl": "./../assets/images/welcome.jpg"
+  }
+],
+
+"solutions": [
+  {
+    "id":"1",
+    "title" :"Telco & ISP Solutions",
+    "description" : "Optimity Solutions are uniquely positioned to maximize your network value with cost minimization. Our partnership with technology leaders empowers us with the skills and tools to manage your full IT landscape seamlessly. Our proven success reflects our unwavering commitment to improvement. We customize services to your exact needs, ensuring cost-effective management of your network environment." ,
+    "servicesupport" : ["Network Infrastructure Design and Deployment","Technical Support and Helpdesk Services","24/7 technical support","24/7 technical support","24/7 technical support"],
+    "imageUrl" : "ispImage"
+  },
+  {
+    "id":"2",
+    "title" :"Security Solutions",
+    "description" : "Optimity Solutions are uniquely positioned to maximize your network value with cost minimization. Our partnership with technology leaders empowers us with the skills and tools to manage your full IT landscape seamlessly. Our proven success reflects our unwavering commitment to improvement. We customize services to your exact needs, ensuring cost-effective management of your network environment." ,
+    "servicesupport" : ["Network Infrastructure Design and Deployment","Technical Support and Helpdesk Services","24/7 technical support","24/7 technical support","24/7 technical support"],
+    "imageUrl" : "ispImage"
+  },
+  {
+    "id":"3",
+    "title" :"Data Center Solution",
+    "description" : "Optimity Solutions are uniquely positioned to maximize your network value with cost minimization. Our partnership with technology leaders empowers us with the skills and tools to manage your full IT landscape seamlessly. Our proven success reflects our unwavering commitment to improvement. We customize services to your exact needs, ensuring cost-effective management of your network environment." ,
+    "servicesupport" : ["Network Infrastructure Design and Deployment","Technical Support and Helpdesk Services","24/7 technical support","24/7 technical support","24/7 technical support"],
+    "imageUrl" : "ispImage"
+  }
+]
+
+}

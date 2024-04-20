@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply font-body;
+}
+
+.logo{
+    font-variant: small-caps;
+}
+
+body{
+    @apply p-0 m-0 bg-gradient-to-tr from-mycoral via-mypink to-mypurple ;
+}
+
+section{
+    @apply p-4 md:p-8 max-w-screen-xl mx-auto;
+}
+
+h1{
+    @apply text-center text-4xl md:text-6xl pb-6 text-white;
+}
+
+h2{
+    @apply text-center text-3xl md:text-5xl;
+}
+
+h3{
+    @apply font-semibold lg:text-5xl md:text-4xl sm:text-2xl text-2xl;
+}
+
+h4{
+    @apply lg:text-2xl md:text-2xl sm:text-xl text-xl font-semibold;
+}
+
+p{
+    @apply text-xl md:text-2xl;
+}
+
+.mainnav{
+    @apply text-lg py-2 md:p-3 md:mr-1 rounded-md transition duration-200 ease-linear text-mydarkbg md:text-mypurple hover:text-mycoral md:hover:text-white md:hover:bg-gradient-to-r md:hover:from-mypink md:hover:to-mycoral text-center;
+}
+
+.active{
+    @apply  text-mycoral md:text-white md:bg-gradient-to-r md:from-mypink md:to-mycoral text-center;
+}
+
+@layer components {
+    .mybutton{
+        @apply w-fit inline-block mt-4 cursor-pointer py-2 px-8 text-lg bg-gradient-to-r from-[#ff1493] to-[#ff7f50] hover:bg-gradient-to-r hover:from-[#ff1493] hover:to-[#6C3598] text-white rounded-full transition duration-200 ease-linear;  
+    }
+    
+    .bgcoralwhitepink{
+        @apply rounded-lg bg-gradient-to-tr from-orange-100 via-white to-pink-200 shadow-xl text-slate-600;
+    }
+    
+    .bgtransparent{
+        @apply rounded-md bg-[#ffffff1a] hover:bg-slate-500 bg-opacity-10 hover:bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-md;
+    }
+}
