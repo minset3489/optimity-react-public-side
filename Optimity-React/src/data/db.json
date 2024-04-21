@@ -31,6 +31,51 @@
     "servicesupport" : ["Network Infrastructure Design and Deployment","Technical Support and Helpdesk Services","24/7 technical support","24/7 technical support","24/7 technical support"],
     "imageUrl" : "ispImage"
   }
+],
+
+"about": [
+  { 
+    "id": "1",
+    "title": "We'll Help You Solve Problems",
+    "description" : "Optimity is a vendor-neutral System Integrator specializing in delivering innovative ICT solutions. Founded by experienced engineers with diverse backgrounds, we simplify IT processes for businesses. With extensive experience in healthcare, banking, and finance, we specialize in network and system infrastructure solutions tailored to meet our customers’ needs. Partner with Optimity and let us help you navigate modern technology, so you can focus on growing your business.",
+    "imageUrl" : "/assets/images/aboutus1.jpg"
+  }
+   
+],
+
+"visionmission": [
+  { 
+    "id": "1",
+    "title": "Vision",
+    "description" : "To become the leading innovative ICT Solution Provider in Myanmar, dedicated to serving our customers' best interests."
+  },
+  { 
+    "id": "2",
+    "title": "Mission",
+    "description" : "To consistently drive innovation and adaptation, delivering expert project solutions, and providing proactive operational support that aligns with evolving technology."
+  }
+   
+],
+
+"corevalues": [
+  { 
+    "id": "1",
+    "value": "Ethical Integrity ► Upholding ethical standards through responsible and accountable actions."
+  },
+  { 
+    "id": "2",
+    "value": "Customer-Centricity ► Prioritizing our customers' success, ensuring employee satisfaction, and creating value for our shareholders."
+  },
+  { 
+    "id": "3",
+    "value": "Passion for Excellence ► Fueling our actions with an unwavering passion for excellence."
+  },
+  { 
+    "id": "4",
+    "value": "Social and Environmental Responsibility ► Committing to the well-being of society, the environment, and future generations in all our endeavors."
+  }
+   
 ]
+
 
 }
