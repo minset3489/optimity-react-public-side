@@ -1,6 +1,8 @@
 const News = () => {
     return ( <>
-        <div>News Page</div>
+        <section className="text-white">
+            <h1>News</h1>
+      </section>
     </> );
 }
  

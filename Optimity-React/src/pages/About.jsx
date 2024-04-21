@@ -3,9 +3,9 @@ const About = () => {
  
 
     return (
-      <div className="text-4xl">
-        About Page
-      </div>
+      <section className="text-white">
+            <h1>About Us</h1>
+      </section>
     );
   }
    
