@@ -1,7 +1,7 @@
 import Testimonials  from '../components/Testimonials';
 import Services from '../components/Services';
 import Welcome from './../components/Welcome'
-import HomeAbout from '../components/HomeAbout';
+import AboutInfo from '../components/AboutInfo';
 import HomeSolution from '../components/HomeSolution';
 import HomeContact from '../components/HomeContact';
 
@@ -17,7 +17,7 @@ const Home = () => {
         <Testimonials />
 
         <div className="!bg-mydarkbg text-slate-200 z-10">
-          <HomeAbout/>
+          <AboutInfo navLink={true} title={true} lineClamp={true} />
         </div>
 
         <HomeSolution/>
