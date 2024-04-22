@@ -11,7 +11,7 @@ const CoreValues = () => {
         <div className="my-6 py-6 border-y border-white border-opacity-20">
             <h2 className="pb-6">Core Values</h2>
         {error && <div>{error}</div>}
-        {isPending || ! corevalues ? <div>{isPending}</div> :
+        {isPending || ! corevalues ? <div>Loading...</div> :
             <div className="max-w-4xl m-auto">
                 { corevalues.map((data) => (
                     <div key={data.id} className="flex text-lg">

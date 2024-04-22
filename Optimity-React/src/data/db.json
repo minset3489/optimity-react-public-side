@@ -3,8 +3,8 @@
 "welcome": [
   {
     "id": 1,
-    "title": "Optimity",
-    "description": "We are passionate about maximizing the potential of our customers' IT systems and ensuring that every single cent invested delivers its full worth. We provide comprehensive vendor-neutral solutions, always prioritizing our customers’ best interests. Our dedicated team of experienced professionals strives to deliver innovative and cutting-edge ICT solutions that precisely match each customer's unique needs.",
+    "title": "Welcome to Optimity!",
+    "description": "We are dedicated to maximizing the potential of our customers' IT systems, ensuring that every investment delivers its full worth. As a vendor-neutral solution provider, we prioritize our customers' best interests, offering comprehensive, tailored solutions. Our experienced team is committed to delivering innovative and cutting-edge ICT solutions that precisely match each customer's unique needs.",
     "imgUrl": "./../assets/images/welcome.jpg"
   }
 ],
@@ -74,8 +74,30 @@
     "id": "4",
     "value": "Social and Environmental Responsibility ► Committing to the well-being of society, the environment, and future generations in all our endeavors."
   }
-   
-]
+],
 
+"news": [
+  { 
+    "id": "1",
+    "title": "New Microsoft AI animates faces from photos",
+    "description" : "Last week, Microsoft researchers detailed a new AI model they’ve developed that can take a still image of a face and an audio clip of someone speaking and automatically create a realistic looking video of that person speaking. The videos — which can be made from photorealistic faces, as well as cartoons or artwork — are complete with compelling lip syncing and natural face and head movements.",
+    "linkUrl" : "https://edition.cnn.com/2024/04/21/tech/microsoft-ai-tool-animates-faces/index.html"
+  }
+],
+
+"vacancy": [
+  { 
+    "id": "1",
+    "title": "Officer",
+    "education": "Bachelor in Marketing",
+    "experience": "No Experience needed freshers can apply"
+  },
+  { 
+    "id": "2",
+    "title": "Brand Officer",
+    "education": "Bachelor in Marketing",
+    "experience": "No Experience needed freshers can apply"
+  }
+]
 
 }

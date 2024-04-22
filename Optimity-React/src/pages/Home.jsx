@@ -4,11 +4,14 @@ import Welcome from './../components/Welcome'
 import AboutInfo from '../components/AboutInfo';
 import HomeSolution from '../components/HomeSolution';
 import HomeContact from '../components/HomeContact';
+import PartnerLogos from '../components/PartnerLogos';
 
 const Home = () => {
     return (
       <div className="text-4xl text-black">
         <Welcome />
+        
+        <PartnerLogos/>
         
         <div className="!bg-mydarkbg text-slate-200 z-10">
           <Services/>
