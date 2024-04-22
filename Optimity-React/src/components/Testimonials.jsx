@@ -34,11 +34,11 @@ const ClientsReivew = () => {
 
   return (
     <section>
-      <div className="flex flex-col lg:flex-row items-center place-items-center gap-8 text-white">
+      <div className="flex flex-col lg:flex-row items-center text-center  md:text-left place-items-center gap-8 text-white">
         <div>
-          <h4 className="md:text-3xl text-pink-50">What Our Clients Say 🙂</h4>
+          <h3 className="md:!text-4xl text-pink-50 mb-4">What Our Clients Say 💗</h3>
           <p className="text-xl pb-2 text-pink-100">We are proud of contributing to the success of our customers.</p>
-          <div className="mt-2 flex gap-4">
+          <div className="mt-2 flex gap-4 place-content-center md:place-content-start">
             <Icon onClick={prev} icon="ei:arrow-left" className="h-14 w-14 text-white rounded-md bg-[#ffffff1a] bg-opacity-10 backdrop-blur-30 shadow-lg text-center cursor-pointer hover:bg-gradient-to-r hover:from-[#ff1493] hover:to-[#ff7f50]" />
             <Icon onClick={next} icon="ei:arrow-right" className="h-14 w-14 text-white rounded-md bg-[#ffffff1a] bg-opacity-10 backdrop-blur-30 shadow-lg text-center cursor-pointer hover:bg-gradient-to-r hover:from-[#ff7f50] hover:to-[#ff1493]" />
           </div>

@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { NavLink } from "react-router-dom";
-
 import { IoMdHome } from "react-icons/io";
 import { IoInformationCircle } from "react-icons/io5";
 import { FaHandshake } from "react-icons/fa6";
@@ -22,7 +20,7 @@ const Footer = () => {
     { title: 'Quick Links', link: [
       { name: 'Home', url: '/', icon: IoMdHome },
       { name: 'About', url: '/about', icon: IoInformationCircle },
-      { name: 'Solutions', url: '/solutions', icon:FaHandshake },
+      { name: 'Solutions', url: '/solutions', icon: FaHandshake },
       { name: 'News', url: '/news', icon: PiNewspaperClippingDuotone },
     ]},
     { title: 'Useful Links', link: [
@@ -32,14 +30,14 @@ const Footer = () => {
       { name: 'Terms & Conditions', url: '/tc', icon: FaFileCircleExclamation },
     ]},
     { title: 'Contact Us', link: [
-      { name: '+959 4 2501 7904', url: '/mobile1', icon:IoCall },
-      { name: '+959 9 7976 2198', url: '/mobile2', icon:IoCall },
-      { name: 'info@optimitycomm.com', url: '/infomail', icon: AiTwotoneMail},
+      { name: '+959 4 2501 7904', url: '/mobile1', icon: IoCall },
+      { name: '+959 9 7976 2198', url: '/mobile2', icon: IoCall },
+      { name: 'info@optimitycomm.com', url: '/infomail', icon: AiTwotoneMail },
     ]},
     { title: 'Follow US', link: [
       { name: 'Facebook', url: 'https://www.facebook.com/OptimityMyanmar', icon: FaFacebook },
       { name: 'LinkedIn', url: '/LinkedIn', icon: FaLinkedin },
-      { name: 'Whatsapp', url: '/Whatsapp', icon: FaWhatsapp},
+      { name: 'Whatsapp', url: '/Whatsapp', icon: FaWhatsapp },
       { name: 'Github', url: '/Github', icon: FaGithub },
     ]},
   ]);

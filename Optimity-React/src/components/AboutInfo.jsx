@@ -27,8 +27,8 @@ const AboutInfo = ({ navLink, title, lineClamp }) => {
                                 <p className={`mt-4 text-justify ${lineClamp ? 'line-clamp-6' : ''}`}>{aboutdata.description}</p>
                                 {navLink && <NavLink to={"/about/" + aboutdata.id} className="mybutton">More...</NavLink>}
                             </div>
-                            <div className=" !w-full lg:!w-6/12 pt-6 lg:pt-0 shadow-lg shadow-slate-500">
-                                <img className="rounded-lg" src={aboutImage} alt="" />
+                            <div className=" !w-full lg:!w-6/12 pt-6 lg:pt-0">
+                                <img className="shadow-md shadow-gray-600 rounded-lg" src={aboutImage} alt="" />
                             </div>
                         </div>
                     ))}
