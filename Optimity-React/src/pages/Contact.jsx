@@ -1,6 +1,12 @@
+
 const Contact = () => {
     return ( <>
-        <div>Contact</div>
+        <section >
+            <h1>Get in touch</h1>
+            <div className="bgcoralwhitepink">
+                asdf
+            </div>
+        </section>
     </> );
 }
  
