@@ -1,10 +1,11 @@
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
     return ( <>
         <section >
-            <h1>Get in touch</h1>
+            <h1>Get in Touch with Us</h1>
             <div className="bgcoralwhitepink">
-                asdf
+            <ContactForm primaryColor="#6B7A90" />
             </div>
         </section>
     </> );
