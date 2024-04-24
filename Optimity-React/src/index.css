@@ -43,7 +43,7 @@ p{
 }
 
 .active{
-    @apply  text-mycoral md:text-white md:bg-gradient-to-r md:from-mypink md:to-mycoral text-center;
+    @apply  text-slate-300 md:text-white md:bg-gradient-to-r md:from-mypink md:to-mycoral text-center;
 }
 
 @layer components {

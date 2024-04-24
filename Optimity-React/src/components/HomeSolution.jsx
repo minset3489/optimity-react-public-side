@@ -15,7 +15,7 @@ const HomeSolution = () => {
   ) : 0;
 
   // Calculate the height based on the maximum number of items
-  const maxItemHeight = maxSupportItemCount * 40; // Adjust 40 according to your design
+  const maxItemHeight = maxSupportItemCount * 45; // Adjust 40 according to your design
 
   return (
     <section className="text-white">
@@ -40,11 +40,11 @@ const HomeSolution = () => {
                 }}
               >
                 <div>
-                  <h4 className="text-mycoral text-center border-b border-white border-opacity-20 line-clamp-1 mb-4">
+                  <h4 className="text-mycoral text-center border-b border-white border-opacity-20 md:line-clamp-2 mb-4">
                     {solution.title}
                   </h4>
                   {solution.servicesupport.map((servicesupport, index) => (
-                    <div className="flex text-lg" key={index}>
+                    <div className="flex !text-base" key={index}>
                       <div>
                         <Icon
                           className="text-green-500 mr-1 mt-1"
@@ -57,7 +57,7 @@ const HomeSolution = () => {
                 </div>
                 <NavLink
                   className="text-center align-bottom mybutton !w-full md:w-auto"
-                  to="/services"
+                  to={`/solutions/${solution.id}`}
                 >
                   Details...
                 </NavLink>

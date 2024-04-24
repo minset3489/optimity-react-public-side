@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import useFetch from "../composables/useFetch";
-import image1 from "./../assets/images/aboutus1.jpg";
+import image1 from "./../assets/images/aboutus3.jpg";
 import PropTypes from 'prop-types';
 
 const AboutInfo = ({ navLink, title, lineClamp }) => {
