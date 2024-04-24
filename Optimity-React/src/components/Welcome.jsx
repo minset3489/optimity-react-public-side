@@ -1,5 +1,5 @@
 import './Welcome.css'
-import welcomeimage from "./../assets/images/welcome.jpg"
+import welcomeimage from "./../assets/images/WelcomeImg.jpg"
 import { NavLink } from "react-router-dom";
 import useFetch from "../composables/useFetch";
 

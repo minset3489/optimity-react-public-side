@@ -28,11 +28,9 @@ export default function RootLayout() {
         <div className="fixed md:sticky bottom-0 md:top-0 left-0 right-0 bg-white md:border-b md:border-gray-300 md:shadow-md z-50">
             <section className='!p-0'>
                 <div className='flex items-center justify-between'>
-
                     <div className='hidden md:flex items-center'>
-                    
                         <img src={logoImage} alt="Optimity Logo" />
-                    <h3 className="logo font-logo text-mycoral ml-2">Optimity</h3>
+                    <h3 className="logo font-logo text-mycoral font-thin ml-3">Optimity</h3>
                     </div>
 
                     <nav className="flex items-center text-center justify-evenly w-full md:w-auto">
