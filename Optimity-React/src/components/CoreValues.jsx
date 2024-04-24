@@ -8,7 +8,7 @@ const CoreValues = () => {
         error,
     } = useFetch("http://localhost:3000/corevalues");
     return ( <>
-        <div className="my-6 py-6 border-y border-white border-opacity-20">
+        <div className="mt-6 py-6 border-y border-white border-opacity-20">
             <h2 className="pb-6">Core Values</h2>
         {error && <div>{error}</div>}
         {isPending || ! corevalues ? <div>Loading...</div> :

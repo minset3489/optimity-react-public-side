@@ -39,9 +39,9 @@ const News = () => {
         <Services/>
 
         <Vacancy/>
-
+    </section>
+    <section className="!py-0 !my-0">
         <PartnerLogos/>
-
     </section>
     </> );
 }

@@ -27,7 +27,7 @@ h2{
 }
 
 h3{
-    @apply font-semibold lg:text-5xl md:text-4xl sm:text-2xl text-2xl;
+    @apply font-semibold text-4xl lg:text-5xl ;
 }
 
 h4{
@@ -43,12 +43,12 @@ p{
 }
 
 .active{
-    @apply  text-mycoral md:text-white md:bg-gradient-to-r md:from-mypink md:to-mycoral text-center;
+    @apply  text-slate-300 md:text-white md:bg-gradient-to-r md:from-mypink md:to-mycoral text-center;
 }
 
 @layer components {
     .mybutton{
-        @apply w-fit inline-block mt-4 cursor-pointer py-2 px-8 text-lg bg-gradient-to-r from-[#ff1493] to-[#ff7f50] hover:bg-gradient-to-r hover:from-[#ff1493] hover:to-[#6C3598] text-white rounded-full transition duration-200 ease-linear;  
+        @apply w-fit inline-block mt-4 cursor-pointer py-2 px-8 text-lg bg-gradient-to-r from-[#ff1493] to-[#ff7f50] hover:bg-gradient-to-r hover:from-[#ff1493] hover:to-[#6C3598] !text-white rounded-full transition duration-200 ease-linear;  
     }
     
     .bgcoralwhitepink{
