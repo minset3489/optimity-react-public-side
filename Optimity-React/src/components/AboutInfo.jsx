@@ -10,7 +10,7 @@ const AboutInfo = ({ navLink, title, lineClamp }) => {
         data: aboutdatas,
         isPending,
         error,
-    } = useFetch("http://192.168.1.106:5000/about");
+    } = useFetch("http://optimityback.htoomaungthait.xyz/about");
 
     return ( 
         <>

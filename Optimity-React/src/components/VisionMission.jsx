@@ -6,7 +6,7 @@ const VisionMission = () => {
         data: visionmission,
         isPending,
         error,
-    } = useFetch("http://192.168.1.106:5000/visionmission");
+    } = useFetch("http://optimityback.htoomaungthait.xyz/visionmission");
 
     return ( <>
         <section>

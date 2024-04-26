@@ -8,7 +8,7 @@ const Welcome = () => {
         data: welcome,
         isPending,
         error,
-    } = useFetch("http://192.168.1.106:5000/welcome");
+    } = useFetch("http://optimityback.htoomaungthait.xyz/welcome");
 
     const welcomeImage = welcomeimage;
 

@@ -6,7 +6,7 @@ const CoreValues = () => {
         data: corevalues,
         isPending,
         error,
-    } = useFetch("http://192.168.1.106:5000/corevalues");
+    } = useFetch("http://optimityback.htoomaungthait.xyz/corevalues");
     return ( <>
         <div className="mt-6 py-6 border-y border-white border-opacity-20">
             <h2 className="pb-6">Core Values</h2>
