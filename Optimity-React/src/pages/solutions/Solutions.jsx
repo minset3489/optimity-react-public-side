@@ -5,7 +5,7 @@ import imageISP from "../../assets/images/ISP.jpg";
 
 const Solutions = () => {
     const image1 = imageISP;
-    const { data: solutions, isPending, error } = useFetch("http://localhost:3000/solutions");
+    const { data: solutions, isPending, error } = useFetch("http://192.168.1.106:5000/solutions");
 
     return (
         <>

@@ -6,7 +6,7 @@ const Vacancy = () => {
         data: vacancy,
         isPending,
         error,
-    } = useFetch("http://localhost:3000/vacancy");
+    } = useFetch("http://192.168.1.106:5000/vacancy");
 
     return ( <>
     
