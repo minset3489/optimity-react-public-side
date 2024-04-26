@@ -10,7 +10,7 @@ const AboutInfo = ({ navLink, title, lineClamp }) => {
         data: aboutdatas,
         isPending,
         error,
-    } = useFetch("http://localhost:3000/about");
+    } = useFetch("http://192.168.1.106:5000/about");
 
     return ( 
         <>
@@ -30,7 +30,7 @@ const AboutInfo = ({ navLink, title, lineClamp }) => {
                                 {aboutdata.description.split('\n\n').map((paragraph, index) => (
                                     <p key={index} className={`mt-4 text-justify ${lineClamp ? 'line-clamp-6' : ''}`}>{paragraph}</p>
                                 ))}
-                                {navLink && <NavLink to={"/about/" + aboutdata.id} className="mybutton ">More...</NavLink>}
+                                {navLink && <NavLink to="/about" className="mybutton ">More...</NavLink>}
                             </div>
                             <div className="w-full lg:w-6/12 pt-6 lg:pt-0">
                                 <img className="shadow-md shadow-gray-600 rounded-lg" src={aboutImage} alt="" />

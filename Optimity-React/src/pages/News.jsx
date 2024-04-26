@@ -14,7 +14,7 @@ const News = () => {
         data: news,
         isPending,
         error,
-    } = useFetch("http://localhost:3000/news");
+    } = useFetch("http://192.168.1.106:5000/news");
 
     return ( <>
     <section className="text-white">
