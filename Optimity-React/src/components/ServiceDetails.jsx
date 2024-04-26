@@ -6,7 +6,7 @@ const ServiceDetails = () => {
 
     const imageDesign = imageDI;
     const { id } = useParams();
-    const { data: service, isPending, error } = useFetch('http://192.168.1.106:5000/services/' + id);
+    const { data: service, isPending, error } = useFetch('http://optimityback.htoomaungthait.xyz/services/' + id);
 
     return ( <>
 

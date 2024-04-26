@@ -7,7 +7,7 @@ const HomeSolution = () => {
     data: solutions,
     isPending,
     error,
-  } = useFetch("http://192.168.1.106:5000/solutions/");
+  } = useFetch("http://optimityback.htoomaungthait.xyz/solutions/");
 
   // Calculate the maximum number of items in the servicesupport array
   const maxSupportItemCount = solutions ? Math.max(

@@ -9,7 +9,7 @@ const Services = () => {
     data: services,
     isPending,
     error,
-} = useFetch("http://192.168.1.106:5000/services");
+} = useFetch("http://optimityback.htoomaungthait.xyz/services");
   
 
   return (
