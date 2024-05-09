@@ -6,14 +6,10 @@ import PartnerLogos from "../components/PartnerLogos";
 
 
 const About = () => {
-<<<<<<< HEAD
- 
-    console.log("I want to see merge conflict");
-=======
 
-  console.log('About Conflict')
+  console.log('About Conflict');
+  console.log('I want to know git fetch can prevent merge conflict');
 
->>>>>>> 776f399d578f8c472b5adc4afd311a172bf33280
     return (
       <>
       <section className="text-white">
