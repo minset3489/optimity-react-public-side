@@ -1,12 +1,13 @@
 import { useParams, NavLink } from 'react-router-dom';
 import useFetch from '../composables/useFetch';
 import imageDI from "./../assets/images/Design and Implementation.png"
+import { backendBaseUrl } from '../config/appConfig';
 
 const ServiceDetails = () => {
 
     const imageDesign = imageDI;
     const { id } = useParams();
-    const { data: service, isPending, error } = useFetch('http://optimityback.htoomaungthait.xyz/services/' + id);
+    const { data: service, isPending, error } = useFetch(`${backendBaseUrl}/services/` + id);
 
     return ( <>
 

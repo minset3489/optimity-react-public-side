@@ -1,18 +1,29 @@
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import useFetch from "../composables/useFetch";
+import { backendBaseUrl } from "../config/appConfig";
 
 const HomeSolution = () => {
+  const solutionUrlToFetch = `http://localhost:5000/solutions`
   const {
     data: solutions,
     isPending,
     error,
-  } = useFetch("http://optimityback.htoomaungthait.xyz/solutions/");
+  } = useFetch(solutionUrlToFetch);
+  // console.log(solutions != undefined ? solutions[0] : null);
+
+  let maxSupportItemCount = 0;
 
   // Calculate the maximum number of items in the servicesupport array
-  const maxSupportItemCount = solutions ? Math.max(
-    ...solutions.map((solution) => solution.servicesupport.length)
-  ) : 0;
+  if(!isPending || solutions != undefined ){
+    //  console.log(isPending, solutions);
+
+     maxSupportItemCount = solutions ? Math.max(
+      ...solutions.map((solution) => solution.solution_services.length)
+    ) : 0;
+  }
+  
+  
 
   // Calculate the height based on the maximum number of items
   const maxItemHeight = maxSupportItemCount * 45; // Adjust 40 according to your design
@@ -20,15 +31,16 @@ const HomeSolution = () => {
   return (
     <section className="text-white">
       {error && <div>{error}</div>}
-      {isPending || !solutions ? (
+      {isPending || solutions == undefined ? (
         <div>Loading...</div>
       ) : (
         <div>
+          
           <div className="text-center">
             <h3 className="mb-4">Our Solutions</h3>
           </div>
           <div className="grid grid-cols-auto-fit gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {solutions.map((solution) => (
+            {  solutions.map((solution) => (
               <div
                 key={solution.id}
                 className="text-start p-8 rounded-md bg-mydarkbg shadow-md mb-4"
@@ -43,7 +55,7 @@ const HomeSolution = () => {
                   <h4 className="text-mycoral text-center border-b border-white border-opacity-20 md:line-clamp-2 mb-4">
                     {solution.title}
                   </h4>
-                  {solution.servicesupport.map((servicesupport, index) => (
+                  {solution.solution_services.map((servicesupport, index) => (
                     <div className="flex !text-base" key={index}>
                       <div>
                         <Icon
@@ -51,7 +63,7 @@ const HomeSolution = () => {
                           icon="pajamas:check-circle"
                         />
                       </div>
-                      {servicesupport}
+                      {servicesupport.service_name}
                     </div>
                   ))}
                 </div>

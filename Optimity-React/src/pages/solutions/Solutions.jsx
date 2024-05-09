@@ -2,10 +2,11 @@ import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import useFetch from "../../composables/useFetch";
 import imageISP from "../../assets/images/ISP.jpg";
+import { backendBaseUrl } from "../../config/appConfig";
 
 const Solutions = () => {
     const image1 = imageISP;
-    const { data: solutions, isPending, error } = useFetch("http://optimityback.htoomaungthait.xyz/solutions");
+    const { data: solutions, isPending, error } = useFetch(`${backendBaseUrl}/solutions`);
 
     return (
         <>
@@ -24,7 +25,7 @@ const Solutions = () => {
                         </div>
                         <div className="mt-6">
                             <h4 className="underline mb-4">Service Support</h4>
-                            {solution.servicesupport.map((servicesupport, index) => (
+                            {solution.solution_services.map((servicesupport, index) => (
                                 <div className="flex text-lg text-left" key={index}>
                                     <div>
                                         <Icon
@@ -32,7 +33,7 @@ const Solutions = () => {
                                             icon="mdi:tick-circle"
                                         />
                                     </div>
-                                    {servicesupport}
+                                    {servicesupport.service_name}
                                 </div>
                             ))}
                             <NavLink

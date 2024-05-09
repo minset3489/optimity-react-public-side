@@ -1,12 +1,13 @@
 
 import useFetch from "../composables/useFetch";
+import { backendBaseUrl } from "../config/appConfig";
 
 const Vacancy = () => {
     const {
         data: vacancy,
         isPending,
         error,
-    } = useFetch("http://optimityback.htoomaungthait.xyz/vacancy");
+    } = useFetch(`${backendBaseUrl}/vacancy`);
 
     return ( <>
     
