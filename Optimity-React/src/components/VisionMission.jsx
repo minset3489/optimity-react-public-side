@@ -1,12 +1,14 @@
 import useFetch from "../composables/useFetch";
+import { backendBaseUrl } from "../config/appConfig";
 
 const VisionMission = () => {
+
 
     const {
         data: visionmission,
         isPending,
         error,
-    } = useFetch("http://optimityback.htoomaungthait.xyz/visionmission");
+    } = useFetch(`${backendBaseUrl}/visionmission`);
 
     return ( <>
         <section>

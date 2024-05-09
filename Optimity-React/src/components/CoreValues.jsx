@@ -1,12 +1,13 @@
 import { Icon } from "@iconify/react";
 import useFetch from "../composables/useFetch";
+import { backendBaseUrl } from "../config/appConfig";
 
 const CoreValues = () => {
     const {
         data: corevalues,
         isPending,
         error,
-    } = useFetch("http://optimityback.htoomaungthait.xyz/corevalues");
+    } = useFetch(`${backendBaseUrl}/corevalues`);
     return ( <>
         <div className="mt-6 py-6 border-y border-white border-opacity-20">
             <h2 className="pb-6">Core Values</h2>
