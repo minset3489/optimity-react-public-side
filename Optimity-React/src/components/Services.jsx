@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { Icon } from '@iconify/react';
 
 import useFetch from "../composables/useFetch";
+import { backendBaseUrl } from "../config/appConfig";
 
 const Services = () => {
 
@@ -9,7 +10,7 @@ const Services = () => {
     data: services,
     isPending,
     error,
-} = useFetch("http://optimityback.htoomaungthait.xyz/services");
+} = useFetch(`${backendBaseUrl}/services`);
   
 
   return (
