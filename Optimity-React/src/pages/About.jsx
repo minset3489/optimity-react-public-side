@@ -7,7 +7,7 @@ import PartnerLogos from "../components/PartnerLogos";
 
 const About = () => {
  
-
+    console.log("I want to see merge conflict");
     return (
       <>
       <section className="text-white">
