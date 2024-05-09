@@ -2,11 +2,12 @@ import { useParams, NavLink } from 'react-router-dom';
 import useFetch from '../../composables/useFetch';
 import { Icon } from '@iconify/react';
 import imageISP from "../../assets/images/ISP.jpg";
+import { backendBaseUrl } from '../../config/appConfig';
 
 const SolutionDetails = () => {
     const image1 = imageISP;
     const { id } = useParams();
-    const { data: solution, isPending, error } = useFetch('http://optimityback.htoomaungthait.xyz/solutions/' + id);
+    const { data: solution, isPending, error } = useFetch(`${backendBaseUrl}/solutions/` + id);
 
     return (
         <section>
@@ -25,11 +26,11 @@ const SolutionDetails = () => {
 
                         <div className="pt-6">
                             <div className="font-semibold text-2xl underline text-center">Service Support</div>
-                            {solution.servicesupport.map((servicesupport, index) => (
+                            {solution.solution_services.map((servicesupport, index) => (
                                 <div key={index} className="text-left mt-4 md:mx-4">
                                     <div className="flex text-lg">
                                         <div><Icon className="text-green-500 mt-1" icon="material-symbols:check-circle-rounded" /></div>
-                                        <div>{servicesupport}</div>
+                                        <div>{servicesupport.service_name}</div>
                                     </div>
                                 </div>
                             ))}

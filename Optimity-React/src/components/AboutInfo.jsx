@@ -2,15 +2,19 @@ import { NavLink } from "react-router-dom";
 import useFetch from "../composables/useFetch";
 import image1 from "./../assets/images/aboutus3.jpg";
 import PropTypes from 'prop-types';
+import { backendBaseUrl } from "../config/appConfig";
+
+
 
 const AboutInfo = ({ navLink, title, lineClamp }) => {
     const aboutImage = image1;
+    console.log(backendBaseUrl )
 
     const {
         data: aboutdatas,
         isPending,
         error,
-    } = useFetch("http://optimityback.htoomaungthait.xyz/about");
+    } = useFetch(`${backendBaseUrl}/about`);
 
     return ( 
         <>

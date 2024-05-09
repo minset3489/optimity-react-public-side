@@ -2,13 +2,14 @@ import './Welcome.css'
 import welcomeimage from "./../assets/images/WelcomeImg.jpg"
 import { NavLink } from "react-router-dom";
 import useFetch from "../composables/useFetch";
+import { backendBaseUrl } from '../config/appConfig';
 
 const Welcome = () => {
     const {
         data: welcome,
         isPending,
         error,
-    } = useFetch("http://optimityback.htoomaungthait.xyz/welcome");
+    } = useFetch(`${backendBaseUrl}/welcome`);
 
     const welcomeImage = welcomeimage;
 
