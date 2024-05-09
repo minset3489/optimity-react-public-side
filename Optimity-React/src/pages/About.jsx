@@ -6,7 +6,8 @@ import PartnerLogos from "../components/PartnerLogos";
 
 
 const About = () => {
- 
+
+  console.log('About Conflict')
 
     return (
       <>
