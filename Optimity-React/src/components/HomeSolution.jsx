@@ -4,12 +4,12 @@ import useFetch from "../composables/useFetch";
 import { backendBaseUrl } from "../config/appConfig";
 
 const HomeSolution = () => {
-  const solutionUrlToFetch = `http://localhost:5000/solutions`
+
   const {
     data: solutions,
     isPending,
     error,
-  } = useFetch(solutionUrlToFetch);
+  } = useFetch(`${backendBaseUrl}/solutions`);
   // console.log(solutions != undefined ? solutions[0] : null);
 
   let maxSupportItemCount = 0;
