@@ -6,11 +6,8 @@ import PartnerLogos from "../components/PartnerLogos";
 
 
 const About = () => {
+ 
 
-  console.log('About Conflict');
-  console.log('I want to know git fetch can prevent merge conflict');
-  console.log('The Conflict');
-  
     return (
       <>
       <section className="text-white">

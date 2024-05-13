@@ -4,7 +4,7 @@ import useFetch from "../composables/useFetch";
 import { backendBaseUrl } from "../config/appConfig";
 
 const HomeSolution = () => {
-  const solutionUrlToFetch = `${backendBaseUrl}/solutions`
+  const solutionUrlToFetch = `http://localhost:5000/solutions`
   const {
     data: solutions,
     isPending,
