@@ -63,7 +63,7 @@ const ContactForm = ({ primaryColor }) => {
         e.preventDefault();
         if (validateForm()) {
             // You can add your form submission logic here
-            console.log(formData);
+            alert('This session is Under Development');
         }
     };
 

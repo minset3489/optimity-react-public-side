@@ -32,7 +32,7 @@ const AboutInfo = ({ navLink, title, lineClamp }) => {
                             <div className="w-full lg:w-6/12 md:mr-6 text-center lg:text-left">
                                 
                                 {aboutdata.description.split('\n\n').map((paragraph, index) => (
-                                    <p key={index} className={`mt-4 text-justify ${lineClamp ? 'line-clamp-6' : ''}`}>{paragraph}</p>
+                                    <p key={index} className={`mt-4 text-justify`}>{paragraph}</p>
                                 ))}
                                 {navLink && <NavLink to="/about" className="mybutton ">More...</NavLink>}
                             </div>

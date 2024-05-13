@@ -86,7 +86,7 @@
   {
     "id":"4",
     "title" :"Security Solutions",
-    "description" : "Unparalleled protection with our extensive array of security solutions from firewalls to anti-DDoS, malware and DNS security, proxy, PKI, DPI, end-point security, and security testing, our diverse range is crafted to establish a multi-layered defense strategy." ,
+    "description": "Our Security solutions identify Internal & External threats/vulnerabilities, mitigate risks, and enable audits & compliance in a highly uncertain and risky digital world. We provide the following security solutions \n\n 1. Firewall \n\n 2. Anti-DDoS \n\n 3. Malware & DNS Security \n\n 4. PKI \n\n 5. Proxy\n\n 6. DPI & Endpoint Security \n\n 7. Security Testing",
     "servicesupport" : ["Network Security Solutions",
     "End-Point Security Solutions",
     "Security Testing Services",

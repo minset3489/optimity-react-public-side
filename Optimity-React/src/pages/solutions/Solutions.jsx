@@ -1,12 +1,42 @@
 import { NavLink } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import useFetch from "../../composables/useFetch";
-import imageISP from "../../assets/images/ISP.jpg";
 import { backendBaseUrl } from "../../config/appConfig";
 
+import useFetch from "../../composables/useFetch";
+
+//Image Imports
+import imageISP from "../../assets/images/solutions/ISP.jpg";
+import imageSecurity from "../../assets/images/solutions/securitySolution.jpg";
+import imageDataCenter from "../../assets/images/solutions/dataCenter.jpg";
+import imageHyperConverged from "../../assets/images/solutions/hyperConverged.jpg";
+import imageManagedITCloud from "../../assets/images/solutions/dataCloud.jpg";
+import imageEndUserComputing from "../../assets/images/solutions/endUserCompu.png";
+import imageEquipments from "../../assets/images/solutions/Equipment.png";
+
 const Solutions = () => {
-    const image1 = imageISP;
+    
     const { data: solutions, isPending, error } = useFetch(`${backendBaseUrl}/solutions`);
+
+    const getImage = (title) => {
+        switch(title) {
+            case "Telco & ISP Solutions":
+                return imageISP;
+            case "Data Center Solution":
+                return imageDataCenter;
+            case "Hyper Converged Solution":
+                return imageHyperConverged;
+            case "Security Solutions":
+                return imageSecurity;
+            case "End-user Computing":
+                return imageEndUserComputing;
+            case "Managed IT & Cloud Services":
+                return imageManagedITCloud;
+            case "Enterprise Office Network & End-user Equipment's Supplies":
+                return imageEquipments;
+            default:
+                return null;
+        }
+    }
 
     return (
         <>
@@ -21,7 +51,7 @@ const Solutions = () => {
                     <div className="bgcoralwhitepink p-6 mt-6 text-center" key={solution.id}>
                         <div className="">
                             <h4 className="mb-4">{solution.title}</h4>
-                            <img className="rounded-xl shadow-lg" src={image1} alt="" />
+                            <img className="rounded-xl shadow-lg" src={getImage(solution.title)} alt="" />
                         </div>
                         <div className="mt-6">
                             <h4 className="underline mb-4">Service Support</h4>

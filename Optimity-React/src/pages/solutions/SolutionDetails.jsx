@@ -1,13 +1,44 @@
 import { useParams, NavLink } from 'react-router-dom';
-import useFetch from '../../composables/useFetch';
 import { Icon } from '@iconify/react';
-import imageISP from "../../assets/images/ISP.jpg";
 import { backendBaseUrl } from '../../config/appConfig';
 
+import useFetch from '../../composables/useFetch';
+
+
+//Image Imports
+import imageISP from "../../assets/images/solutions/ISP.jpg";
+import imageSecurity from "../../assets/images/solutions/securitySolution.jpg";
+import imageDataCenter from "../../assets/images/solutions/dataCenter.jpg";
+import imageHyperConverged from "../../assets/images/solutions/hyperConverged.jpg";
+import imageManagedITCloud from "../../assets/images/solutions/dataCloud.jpg";
+import imageEndUserComputing from "../../assets/images/solutions/endUserCompu.png";
+import imageEquipments from "../../assets/images/solutions/Equipment.png";
+
 const SolutionDetails = () => {
-    const image1 = imageISP;
+
     const { id } = useParams();
     const { data: solution, isPending, error } = useFetch(`${backendBaseUrl}/solutions/` + id);
+
+    const getImage = (title) => {
+        switch(title) {
+            case "Telco & ISP Solutions":
+                return imageISP;
+            case "Data Center Solution":
+                return imageDataCenter;
+            case "Hyper Converged Solution":
+                return imageHyperConverged;
+            case "Security Solutions":
+                return imageSecurity;
+            case "End-user Computing":
+                return imageEndUserComputing;
+            case "Managed IT & Cloud Services":
+                return imageManagedITCloud;
+            case "Enterprise Office Network & End-user Equipment's Supplies":
+                return imageEquipments;
+            default:
+                return null;
+        }
+    }
 
     return (
         <section>
@@ -21,7 +52,7 @@ const SolutionDetails = () => {
                 <div className="p-6 md:p-10 bgcoralwhitepink">
                     <div className=' grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div className="pt-6">
-                            <img className="rounded-xl shadow-lg" src={image1} alt="" />
+                            <img className="rounded-xl shadow-lg" src={getImage(solution.title)} alt="" />
                         </div>
 
                         <div className="pt-6">
