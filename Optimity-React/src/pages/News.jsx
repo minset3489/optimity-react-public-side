@@ -5,6 +5,7 @@ import newsImage from "./../assets/images/News.png";
 import Services from '../components/Services';
 import Vacancy from "../components/Vacancy";
 import PartnerLogos from "../components/PartnerLogos";
+import { backendBaseUrl } from "../config/appConfig";
 
 const News = () => {
 
@@ -14,7 +15,7 @@ const News = () => {
         data: news,
         isPending,
         error,
-    } = useFetch("http://optimityback.htoomaungthait.xyz/news");
+    } = useFetch(`${backendBaseUrl}`+`\news`);
 
     return ( <>
     <section className="text-white">
