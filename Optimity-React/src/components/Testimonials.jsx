@@ -6,7 +6,7 @@ import image1 from "./../assets/images/Mr-Sit-Paing.jpg"
 const users = [
   {
     id: "1",
-    review: "Optimity has been our chosen partner for the digital transformation journey we embarked on since 2018. Their exceptional knowledge and passion for ICT infrastructure are among the strongest in the market. Their dedicated, customer-centric mindset has given us peace of mind, despite of challenging situations in Myanmar.",
+    review: "Optimity has been our chosen partner for the digital transformation journey we embarked since 2018. Their exceptional knowledge and passion for ICT infrastructure are among the strongest in the market. Their dedicated, customer-centric mindset has given us peace of mind, despite of challenging situations in Myanmar.",
     name: "Dr. Sitt Paing",
     position : "Chief Information Officer",
     company : "Yoma OUE Pun Hlaing Hospital Limited",
