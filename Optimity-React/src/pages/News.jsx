@@ -15,7 +15,7 @@ const News = () => {
         data: news,
         isPending,
         error,
-    } = useFetch(`${backendBaseUrl}`+`\news`);
+    } = useFetch(`${backendBaseUrl}/news`);
 
     return ( <>
     <section className="text-white">
