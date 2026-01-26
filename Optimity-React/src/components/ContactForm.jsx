@@ -94,7 +94,7 @@ const ContactForm = ({ primaryColor }) => {
                         <h4 className="underline my-2">Office</h4>
                         <p>No.(605), 5th Floor, Building 16, MICT Park, Hlaing Township, Yangon, Myanmar</p>
                         <h4 className="underline my-2">Phone</h4>
-                        <p>+959 4 2501 7904, +959 9 7976 2198</p>
+                        <p> +959 9 7976 2198</p>
                         <h4 className="underline my-2">Email</h4>
                         <p>info@optimitycomm.com</p>
                     </div>
