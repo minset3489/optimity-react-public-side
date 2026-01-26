@@ -30,7 +30,6 @@ const Footer = () => {
       { name: 'Terms & Conditions', url: '/tc', icon: FaFileCircleExclamation },
     ]},
     { title: 'Contact Us', link: [
-      { name: '+959 4 2501 7904', url: '/mobile1', icon: IoCall },
       { name: '+959 9 7976 2198', url: '/mobile2', icon: IoCall },
       { name: 'info@optimitycomm.com', url: '/infomail', icon: AiTwotoneMail },
     ]},
